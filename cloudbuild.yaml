@@ -1,7 +1,7 @@
 steps:
   - name: gcr.io/cloud-builders/git
     entrypoint: /bin/sh
-    args: ['-c', "git clone https://$${USERNAME}:$${GIT_TOKEN}@github.com/PublicisSapient/retailsustainability-pem-common-framework.git -b main"]
+    args: ['-c', "git clone https://$${USERNAME}:$${GIT_TOKEN}@github.com/PublicisSapient/retailsustainability-pem-search-service.git -b main"]
     secretEnv:
       - GIT_TOKEN
       - USERNAME
